@@ -3,18 +3,20 @@ Using  Annotation Mapping
 
 In case of Table Per Subclass, subclass mapped tables are related to parent class mapped table by <b>primary key</b> and <b>foreign key</b> relationship.
 
-In One Table per Subclass scheme, each class persist the data in its own separate table. 
+In <b>One Table per Subclass</b> scheme, each class persist the data in its own separate table. 
 Thus we have 3 tables; Employees, regular_employee and contract_employee to persist the class data. 
 Note that a foreign key relationship exists between the subclass tables and super class table. 
 Thus the common data is stored in employees table and subclass specific fields are stored in regular_employee and contract_employee tables.
 
+One Table Per Subclass example
+--------------------------------------
 
-
-
-
-
-
-
+						              Employee
+							                ^
+							                |
+					----------------------------------------------
+					|					                         |
+		RegularEmployee		                      ContractEmployee
 
 
 
@@ -23,6 +25,7 @@ Thus the common data is stored in employees table and subclass specific fields a
 
 
 RDBMS (MySQL) Table Script:
+------------------------------
 #employees
 CREATE TABLE `employees` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
