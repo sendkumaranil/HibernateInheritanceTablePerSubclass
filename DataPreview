@@ -1,0 +1,19 @@
+select * from employees 
+
+id	name	org
+---------------------
+12	Sumit Bajaj	SAP India Labs
+13	Akash Chopra	SAP India Labs
+
+select * from regular_employee 
+
+regempid, salary, bonus
+-----------------------
+'12', '35000', '12000'
+
+select * from contract_employee 
+
+contempid, pay_per_hour, contract_duration
+--------------------------------------------
+'13', '1200', '6 months'
+
