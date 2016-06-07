@@ -1,0 +1,2 @@
+# HibernateInheritanceTablePerSubclass
+Using  Annotation Mapping
