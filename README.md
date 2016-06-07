@@ -1,7 +1,7 @@
 # HibernateInheritanceTablePerSubclass
 Using  Annotation Mapping
 
-In case of Table Per Subclass, subclass mapped tables are related to parent class mapped table by <b>primary key</b> and <b>foreign key</b> relationship.
+In case of <b>Table Per Subclass</b>, subclass mapped tables are related to parent class mapped table by <b>primary key</b> and <b>foreign key</b> relationship.
 
 In <b>One Table per Subclass</b> scheme, each class persist the data in its own separate table. 
 Thus we have 3 tables; Employees, regular_employee and contract_employee to persist the class data. 
